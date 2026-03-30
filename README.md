@@ -13,13 +13,18 @@ Code for the networked Cournot competition experiments.
 }
 ```
 
-## Reproducing
+## Reproduce experiment 
 
+Run Experiments:
 ```bash
 pip install -r requirements.txt
 python generate_data.py
 python -m experiments.noise
 python -m experiments.sample_size
+```
+
+Generate Plots: 
+```bash
 python -m plotting.noise
 python -m plotting.sample_size
 ```
