@@ -1,0 +1,8 @@
+numpy
+scipy
+cvxpy
+osqp
+pandas
+matplotlib
+mosek
+tqdm
