@@ -162,7 +162,7 @@ class SubEstimator:
             br = self._br_osqp_batch(beta, gamma, p["c"],
                                      alpha_s, actions, Q_obs)
 
-        # --- loss and gradient (always vectorized) ---
+        # --- loss and gradient ( vectorized) ---
         Q_br = q_oth + br
         u_br = ((alpha_s[:, None, :] - p["c"][None, :, :]
                  - beta[None, :, :] * Q_br) * br
